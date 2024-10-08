@@ -1,7 +1,7 @@
 CXX = c++
 CXXFLAGS = -Werror -Wextra -Wall -std=c++98
 TARGET = BraiiiiiiinnnzzzZ
-OBJS = main.o Zombie.o
+OBJS = main.o Zombie.o RandomChump.o newZombie.o
 
 all: $(TARGET)
 
