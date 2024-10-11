@@ -1,11 +1,15 @@
 #include "Weapon.hpp"
 
-Weapon::Weapon() {
+Weapon::Weapon() : type("nothing") {
 
 }
 
+
 Weapon::Weapon(std::string weapon) {
-    type = weapon;
+    if (weapon.empty())
+        type = "nothing";
+    else
+        type = weapon;
 }
 
 Weapon::~Weapon() {
